@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forever Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      font-size: 15px;
+    }
+   .container {
+      max-width: 600px;
+      margin: 100px auto 100px; /* আগে ছিল 70px auto 90px */
+      background: white;
+      display: flex;
+      padding: 25px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+    }
+    .image {
+      flex: 1;
+    }
+    .image img {
+      width: 100%;
+    }
+    .form-section {
+      flex: 1;
+      padding: 0 18px;
+    }
+    .form-section h2 {
+      margin-bottom: 18px;
+      font-size: 19px;
+    }
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 13px 0 4px;
+      font-size: 14px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 87%;
+      padding: 9px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .help-icon {
+      height: 15px;
+      margin-left: 6px;
+    }
+    .forgot {
+      font-size: 12.5px;
+      color: #0066cc;
+      margin-top: 4px;
+      display: inline-block;
+    }
+    .login-btn {
+      background-color: #ffcc00;
+      border: none;
+      padding: 9px;
+      font-size: 14.5px;
+      width: 100%;
+      margin: 18px 0;
+      cursor: pointer;
+    }
+    .bottom-links {
+      text-align: center;
+      font-size: 13px;
+    }
+    footer {
+      text-align: center;
+      padding: 22px;
+      margin-top: 50px; /* নিচে বেশি জায়গা */
+      font-size: 13px;
+      background-color: #f0f0f0;
+    }
+    footer img {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="./index_files/BldgBGD.jpg" alt="Building" />
+    </div>
+    <div class="form-section">
+      <h2>Bangladesh</h2>
+      <form>
+        <label for="distributor">Distributor ID or Email</label>
+        <div class="input-wrapper">
+          <input type="text" id="distributor" name="distributor" />
+          <img src="./index_files/icon_help.png" alt="help" class="help-icon" />
+        </div>
+
+        <label for="password">Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="password" name="password" />
+          <img src="./index_files/icon_help.png" alt="help" class="help-icon" />
+        </div>
+
+        <a href="#" class="forgot">(Forgot your password NO ID?)</a>
+        <!-- এখানে লিঙ্ক বসানো হলো -->
+        <button type="button" class="login-btn" onclick="window.location.href='https://superster.github.io/fot/'">LOGIN</button>
+      </form>
+      <div class="bottom-links">
+        To Become a Distributor<br />
+        Join Now!
+      </div>
+    </div>
+  </div>
+  <footer>
+    <img src="./index_files/icon_help.png" alt="logo" width="14" />
+    Copyright © 2025 Forever Living Products Bangladesh Limited All rights reserved.
+  </footer>
+</body>
+</html>
